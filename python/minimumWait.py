@@ -2,6 +2,7 @@
 
 def minimumWaitingTime(queries):
 	# Maybe just sort these... longest goes last....
+	# That worked... O(n) it is
 	new = sorted(queries)
 	total = 0
 	placeholder = 0
