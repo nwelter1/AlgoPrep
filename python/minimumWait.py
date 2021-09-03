@@ -1,8 +1,6 @@
-# Input: [3,2,1,2,6]
-
 def minimumWaitingTime(queries):
-	# Maybe just sort these... longest goes last....
-	# That worked... O(n) it is
+	# Maybe just sort these... longest goes last.... everything else will still count regardless...
+	# That worked! O(n)
 	new = sorted(queries)
 	total = 0
 	placeholder = 0
