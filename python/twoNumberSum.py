@@ -28,3 +28,14 @@ def twoNumberSum(array, targetSum):
 			else:
 				return [num, a_dict[num]]
 	return []
+
+# Best Solution - Linear O(n)
+def twoNumberSum(array, targetSum):
+	a_dict = {}
+	for i in range(len(array)):
+		if array[i] in a_dict:
+			return [array[a_dict[array[i]]], array[i]]
+		else:
+			match = targetSum - array[i]
+			a_dict[match] = i
+	return []
