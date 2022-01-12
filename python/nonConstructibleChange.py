@@ -1,3 +1,4 @@
+# O(n log n) - sorting | O(1)
 def nonConstructibleChange(coins):
 	coins.sort()
 	current_seen = 0
